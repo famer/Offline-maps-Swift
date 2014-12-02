@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26D70F7A1A28C41100E349B6 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D70F771A28C41100E349B6 /* QRCodeReader.swift */; };
+		26D70F7B1A28C41100E349B6 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D70F781A28C41100E349B6 /* ReaderView.swift */; };
+		26D70F7C1A28C41100E349B6 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D70F791A28C41100E349B6 /* SwitchCameraButton.swift */; };
 		26E11A8A1A249CB100CEB77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E11A891A249CB100CEB77C /* AppDelegate.swift */; };
 		26E11A8C1A249CB100CEB77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E11A8B1A249CB100CEB77C /* ViewController.swift */; };
 		26E11A8F1A249CB100CEB77C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E11A8D1A249CB100CEB77C /* Main.storyboard */; };
 		26E11A911A249CB100CEB77C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E11A901A249CB100CEB77C /* Images.xcassets */; };
 		26E11A941A249CB100CEB77C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E11A921A249CB100CEB77C /* LaunchScreen.xib */; };
 		26E11AA01A249CB100CEB77C /* OfflineMap_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E11A9F1A249CB100CEB77C /* OfflineMap_swiftTests.swift */; };
+		26E11AAE1A24A0AB00CEB77C /* TileMapOverlayRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E11AAD1A24A0AB00CEB77C /* TileMapOverlayRenderer.swift */; };
+		26E11AB01A24A3CE00CEB77C /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E11AAF1A24A3CE00CEB77C /* map.png */; };
+		26E11AB21A24A50700CEB77C /* TileMapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E11AB11A24A50700CEB77C /* TileMapOverlay.swift */; };
+		26E11AB81A24E3AD00CEB77C /* location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 26E11AB71A24E3AD00CEB77C /* location.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26D70F771A28C41100E349B6 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		26D70F781A28C41100E349B6 /* ReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
+		26D70F791A28C41100E349B6 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
 		26E11A841A249CB100CEB77C /* OfflineMap swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OfflineMap swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E11A881A249CB100CEB77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26E11A891A249CB100CEB77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +46,10 @@
 		26E11A991A249CB100CEB77C /* OfflineMap swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OfflineMap swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E11A9E1A249CB100CEB77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26E11A9F1A249CB100CEB77C /* OfflineMap_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineMap_swiftTests.swift; sourceTree = "<group>"; };
+		26E11AAD1A24A0AB00CEB77C /* TileMapOverlayRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileMapOverlayRenderer.swift; sourceTree = "<group>"; };
+		26E11AAF1A24A3CE00CEB77C /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		26E11AB11A24A50700CEB77C /* TileMapOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileMapOverlay.swift; sourceTree = "<group>"; };
+		26E11AB71A24E3AD00CEB77C /* location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = location.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26D70F761A28C41000E349B6 /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				26D70F771A28C41100E349B6 /* QRCodeReader.swift */,
+				26D70F781A28C41100E349B6 /* ReaderView.swift */,
+				26D70F791A28C41100E349B6 /* SwitchCameraButton.swift */,
+			);
+			path = QRCodeReader;
+			sourceTree = "<group>";
+		};
+		26D70F7D1A28C42700E349B6 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				26D70F761A28C41000E349B6 /* QRCodeReader */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		26D70F7E1A28CA8000E349B6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				26E11AAF1A24A3CE00CEB77C /* map.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		26D70F7F1A28CABE00E349B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26E11AB71A24E3AD00CEB77C /* location.gpx */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		26D70F801A28CC0200E349B6 /* Overlay Classes */ = {
+			isa = PBXGroup;
+			children = (
+				26E11AB11A24A50700CEB77C /* TileMapOverlay.swift */,
+				26E11AAD1A24A0AB00CEB77C /* TileMapOverlayRenderer.swift */,
+			);
+			name = "Overlay Classes";
+			sourceTree = "<group>";
+		};
 		26E11A7B1A249CB100CEB77C = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +134,13 @@
 		26E11A861A249CB100CEB77C /* OfflineMap swift */ = {
 			isa = PBXGroup;
 			children = (
-				26E11A891A249CB100CEB77C /* AppDelegate.swift */,
+				26D70F7F1A28CABE00E349B6 /* Resources */,
+				26D70F7D1A28C42700E349B6 /* Libraries */,
+				26D70F7E1A28CA8000E349B6 /* Images */,
+				26D70F801A28CC0200E349B6 /* Overlay Classes */,
 				26E11A8B1A249CB100CEB77C /* ViewController.swift */,
 				26E11A8D1A249CB100CEB77C /* Main.storyboard */,
 				26E11A901A249CB100CEB77C /* Images.xcassets */,
-				26E11A921A249CB100CEB77C /* LaunchScreen.xib */,
 				26E11A871A249CB100CEB77C /* Supporting Files */,
 			);
 			path = "OfflineMap swift";
@@ -90,6 +149,8 @@
 		26E11A871A249CB100CEB77C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26E11A921A249CB100CEB77C /* LaunchScreen.xib */,
+				26E11A891A249CB100CEB77C /* AppDelegate.swift */,
 				26E11A881A249CB100CEB77C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,7 +253,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E11AB01A24A3CE00CEB77C /* map.png in Resources */,
 				26E11A8F1A249CB100CEB77C /* Main.storyboard in Resources */,
+				26E11AB81A24E3AD00CEB77C /* location.gpx in Resources */,
 				26E11A941A249CB100CEB77C /* LaunchScreen.xib in Resources */,
 				26E11A911A249CB100CEB77C /* Images.xcassets in Resources */,
 			);
@@ -213,7 +276,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				26E11A8C1A249CB100CEB77C /* ViewController.swift in Sources */,
+				26D70F7C1A28C41100E349B6 /* SwitchCameraButton.swift in Sources */,
+				26D70F7B1A28C41100E349B6 /* ReaderView.swift in Sources */,
+				26E11AAE1A24A0AB00CEB77C /* TileMapOverlayRenderer.swift in Sources */,
+				26D70F7A1A28C41100E349B6 /* QRCodeReader.swift in Sources */,
 				26E11A8A1A249CB100CEB77C /* AppDelegate.swift in Sources */,
+				26E11AB21A24A50700CEB77C /* TileMapOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +473,7 @@
 				26E11AA51A249CB100CEB77C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26E11AA61A249CB100CEB77C /* Build configuration list for PBXNativeTarget "OfflineMap swiftTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +482,7 @@
 				26E11AA81A249CB100CEB77C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
