@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		266549FB1A33DC8E00B6B553 /* ImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 266549FA1A33DC8E00B6B553 /* ImageCropView.m */; };
+		266549FF1A33DCA700B6B553 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 266549FE1A33DCA700B6B553 /* FXBlurView.m */; };
 		26D70F7A1A28C41100E349B6 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D70F771A28C41100E349B6 /* QRCodeReader.swift */; };
 		26D70F7B1A28C41100E349B6 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D70F781A28C41100E349B6 /* ReaderView.swift */; };
 		26D70F7C1A28C41100E349B6 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D70F791A28C41100E349B6 /* SwitchCameraButton.swift */; };
@@ -33,6 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		266549F91A33DC8E00B6B553 /* ImageCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCropView.h; sourceTree = "<group>"; };
+		266549FA1A33DC8E00B6B553 /* ImageCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCropView.m; sourceTree = "<group>"; };
+		266549FD1A33DCA700B6B553 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		266549FE1A33DCA700B6B553 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		26654A011A33E01F00B6B553 /* OfflineMap swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OfflineMap swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		26D70F771A28C41100E349B6 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		26D70F781A28C41100E349B6 /* ReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
 		26D70F791A28C41100E349B6 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
@@ -70,6 +77,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		266549F81A33DC8E00B6B553 /* ImageCropView */ = {
+			isa = PBXGroup;
+			children = (
+				266549F91A33DC8E00B6B553 /* ImageCropView.h */,
+				266549FA1A33DC8E00B6B553 /* ImageCropView.m */,
+			);
+			path = ImageCropView;
+			sourceTree = "<group>";
+		};
+		266549FC1A33DCA700B6B553 /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				266549FD1A33DCA700B6B553 /* FXBlurView.h */,
+				266549FE1A33DCA700B6B553 /* FXBlurView.m */,
+			);
+			path = FXBlurView;
+			sourceTree = "<group>";
+		};
 		26D70F761A28C41000E349B6 /* QRCodeReader */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 		26D70F7D1A28C42700E349B6 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				266549FC1A33DCA700B6B553 /* FXBlurView */,
+				266549F81A33DC8E00B6B553 /* ImageCropView */,
 				26D70F761A28C41000E349B6 /* QRCodeReader */,
 			);
 			name = Libraries;
@@ -149,6 +176,7 @@
 		26E11A871A249CB100CEB77C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26654A011A33E01F00B6B553 /* OfflineMap swift-Bridging-Header.h */,
 				26E11A921A249CB100CEB77C /* LaunchScreen.xib */,
 				26E11A891A249CB100CEB77C /* AppDelegate.swift */,
 				26E11A881A249CB100CEB77C /* Info.plist */,
@@ -279,9 +307,11 @@
 				26D70F7C1A28C41100E349B6 /* SwitchCameraButton.swift in Sources */,
 				26D70F7B1A28C41100E349B6 /* ReaderView.swift in Sources */,
 				26E11AAE1A24A0AB00CEB77C /* TileMapOverlayRenderer.swift in Sources */,
+				266549FB1A33DC8E00B6B553 /* ImageCropView.m in Sources */,
 				26D70F7A1A28C41100E349B6 /* QRCodeReader.swift in Sources */,
 				26E11A8A1A249CB100CEB77C /* AppDelegate.swift in Sources */,
 				26E11AB21A24A50700CEB77C /* TileMapOverlay.swift in Sources */,
+				266549FF1A33DCA700B6B553 /* FXBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +437,7 @@
 				INFOPLIST_FILE = "OfflineMap swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OfflineMap swift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -417,6 +448,7 @@
 				INFOPLIST_FILE = "OfflineMap swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OfflineMap swift-Bridging-Header.h";
 			};
 			name = Release;
 		};

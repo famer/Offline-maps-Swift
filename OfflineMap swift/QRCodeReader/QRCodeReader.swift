@@ -153,7 +153,7 @@ class QRCodeReader: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     cameraView.clipsToBounds = true
     cameraView.setTranslatesAutoresizingMaskIntoConstraints(false)
     view.addSubview(cameraView)
-    
+    /*
     if let _frontDevice = frontDevice {
       let newSwitchCameraButton = SwitchCameraButton()
       newSwitchCameraButton.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -162,6 +162,7 @@ class QRCodeReader: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
       
       switchCameraButton = newSwitchCameraButton
     }
+*/
     
     cancelButton.setTranslatesAutoresizingMaskIntoConstraints(false)
     cancelButton.setTitle(cancelButtonTitle, forState: .Normal)
@@ -181,9 +182,13 @@ class QRCodeReader: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     let views: [NSObject: AnyObject] = ["cameraView": cameraView, "cancelButton": cancelButton, "captureButton": captureButton]
     
     view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[cameraView][cancelButton(40)][captureButton(40)]|", options: .allZeros, metrics: nil, views: views))
-    view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[cameraView]|", options: .allZeros, metrics: nil, views: views))
+    view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[cameraView]-|", options: .allZeros, metrics: nil, views: views))
+    view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-[cameraView]-|", options: .allZeros, metrics: nil, views: views))
     view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[cancelButton]-|", options: .allZeros, metrics: nil, views: views))
     view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[captureButton]-|", options: .allZeros, metrics: nil, views: views))
+    
+    view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[cancelButton(50)]", options: .allZeros, metrics: nil, views: views))
+    view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[cancelButton(70)]|", options: .allZeros, metrics: nil, views: views))
     
     if let _switchCameraButton = switchCameraButton {
       let switchViews: [NSObject: AnyObject] = ["switchCameraButton": _switchCameraButton]
@@ -271,7 +276,7 @@ class QRCodeReader: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                 
                 let iView: UIImageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: 445.0, height: 445.0))
                 iView.image = image
-                self.view.addSubview(iView)
+                //self.view.addSubview(iView)
                 //println(image)
                 self.stopScanning()
                 
